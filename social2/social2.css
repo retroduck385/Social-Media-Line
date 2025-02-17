@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 500px 1fr 500px;
+    grid-template-areas: 
+    "header header header"
+    "nav main article";
+}
+
+/* header */
+header{
+    grid-area: header;
+    background-color:antiquewhite;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.left-side-header{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.left-side-header img{
+    height: 70px;
+}
+
+.left-side-header h1{
+    font-size: larger;
+}
+
+.right-side-header{
+    margin-right: 150px;
+}
+
+.right-side-header h2{
+    font-size: larger;
+}
+
+/* nav */
+nav{
+    padding:10px;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.home img {
+    height: 40px;
+}
+
+.home h2{
+    font-size: larger;
+}
+
+.friends{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.friends img {
+    height: 40px;
+}
+
+.friends h2{
+    font-size: larger;
+}
+
+.acquaintances{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.acquaintances img {
+    height: 40px;
+}
+
+.acquaintances h2{
+    font-size: larger;
+}
+
+/* main */
+
+main{
+    padding:10px;
+    grid-area: main;
+}
+
+.main-green-box{
+    height: 350px;
+    width: 800px;
+    background-color:lightgreen;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+.line1{
+    align-self: center;
+}
+
+.line1 h1{
+    font-size: larger;
+}
+
+
+.line2 img{
+    margin-left: 80px;
+    width: 80%;
+}
+
+
+.line3{
+    display: flex;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+.line3 img{
+    height: 40px;
+}
+
+article{
+    padding:10px;
+    grid-area: article;
+    display: flex;
+}
+
+.box{
+    height: 100px;
+    width: 250px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.friends-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    
+}
+
+.friend1{
+    display: flex;
+    flex-direction: column;
+}
+
+.friend1 img {
+    height: 40px;
+    width: 40px;
+}
+
+.friend2{
+    display: flex;
+    flex-direction: column;
+}
+
+.friend2 img {
+    height: 40px;
+    width: 40px;
+}
+
+.friend3{
+    display: flex;
+    flex-direction: column;
+}
+
+.friend3 img {
+    height: 40px;
+    width: 40px;
+
+}
+
